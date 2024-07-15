@@ -1,0 +1,57 @@
+{
+  "name": "img-ocr",
+  "private": true,
+  "version": "0.0.0",
+  "description": "vscode plugin img ocr",
+  "engines": {
+    "node": ">=18",
+    "vscode": "^1.75.0"
+  },
+  "publisher": "nailfar",
+  "main": "dist/extension/index.js",
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "hello-world.showHelloWorld",
+        "title": "图片处理器",
+        "shortTitle": "重命名,OCR"
+      }
+    ]
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@easy_vscode/core": "^1.7.2",
+    "@tomjs/tsconfig": "^1.7.0",
+    "@tomjs/vscode-webview": "^1.0.0",
+    "@vscode/webview-ui-toolkit": "^1.4.0",
+    "baidu-aip-sdk": "^4.16.16",
+    "image-size": "^1.1.1",
+    "json5": "^2.2.3",
+    "lodash": "^4.17.21",
+    "unplugin-auto-import": "^0.17.6",
+    "unplugin-vue-components": "^0.27.2",
+    "vue": "^3.4.30",
+    "vue-tsc": "^2.0.26"
+  },
+  "devDependencies": {
+    "@arco-design/web-vue": "^2.55.3",
+    "@tomjs/vite-plugin-vscode": "^2.5.5",
+    "@types/lodash": "^4.17.6",
+    "@types/node": "^18.19.39",
+    "@types/vscode": "^1.75.0",
+    "@types/vscode-webview": "^1.57.5",
+    "@vitejs/plugin-vue": "^5.0.5",
+    "@vscode/codicons": "^0.0.36",
+    "cross-env": "^7.0.3",
+    "typescript": "~5.5.2",
+    "unocss": "^0.61.3",
+    "vite": "^5.3.1"
+  }
+}
